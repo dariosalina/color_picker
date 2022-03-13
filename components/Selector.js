@@ -1,4 +1,4 @@
-export const FreeSelector = ({
+export const Selector = ({
   parsedColor,
   satCoords,
   hueCoords,
@@ -18,7 +18,6 @@ export const FreeSelector = ({
         <div
           className="cp-saturation-indicator"
           style={{
-            backgroundColor: parsedColor.rbg,
             left: (satCoords?.[0] ?? 0) + "%",
             top: (satCoords?.[1] ?? 0) + "%"
           }}

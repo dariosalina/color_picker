@@ -1,54 +1,52 @@
 .cp-free-root {
-    display: grid;
-    grid-gap: 8px;
-    margin-bottom: 16px;
-    max-width: 100%;
-    width: 400px;
+  display: grid;
+  grid-gap: 8px;
+  margin-bottom: 16px;
+  max-width: 100%;
+  width: 400px;
 }
 
 .cp-saturation {
-    width: 200px;
-    height: 200px;
-    background-image: linear-gradient(to right, black, transparent),
-        linear-gradient(transparent, white);
-    border-radius: 4px;
-    position: relative;
-    cursor: crosshair;
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(to right, black, transparent),
+    linear-gradient(transparent, white);
+  border-radius: 4px;
+  position: relative;
+  cursor: crosshair;
 
-    &-indicator {
-        width: 15px;
-        height: 15px;
-        background-image: url("data:image/svg+xml;utf8,<svg class='svg-icon' style='width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg'><path d='M512 853.333333c-25.6 0-42.666667-17.066667-42.666667-42.666666V213.333333c0-25.6 17.066667-42.666667 42.666667-42.666666s42.666667 17.066667 42.666667 42.666666v597.333334c0 25.6-17.066667 42.666667-42.666667 42.666666z'  /><path d='M810.666667 554.666667H213.333333c-25.6 0-42.666667-17.066667-42.666666-42.666667s17.066667-42.666667 42.666666-42.666667h597.333334c25.6 0 42.666667 17.066667 42.666666 42.666667s-17.066667 42.666667-42.666666 42.666667z'  /></svg>");
-        transform: translate(-7.5px, -7.5px);
-        position: absolute;
-    }
+  &-indicator {
+    width: 15px;
+    height: 15px;
+    background-image: url("data:image/svg+xml;utf8,<svg class='svg-icon' style='width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg'><path d='M512 853.333333c-25.6 0-42.666667-17.066667-42.666667-42.666666V213.333333c0-25.6 17.066667-42.666667 42.666667-42.666666s42.666667 17.066667 42.666667 42.666666v597.333334c0 25.6-17.066667 42.666667-42.666667 42.666666z'  /><path d='M810.666667 554.666667H213.333333c-25.6 0-42.666667-17.066667-42.666666-42.666667s17.066667-42.666667 42.666666-42.666667h597.333334c25.6 0 42.666667 17.066667 42.666666 42.666667s-17.066667 42.666667-42.666666 42.666667z'  /></svg>");
+    transform: translate(-7.5px, -7.5px);
+    position: absolute;
+  }
 }
 
-
 .cp-hue {
-    width: 100%;
-    height: 12px;
-    background-image: linear-gradient(
-        to right,
-        #f00,
-        #ff0,
-        #0f0,
-        #0ff,
-        #00f,
-        #f0f,
-        #f00,
-    );
-    border-radius: 999px;
-    position: relative;
-    cursor: crosshair;
+  width: 100%;
+  height: 12px;
+  background-image: linear-gradient(
+    to right,
+    #f00,
+    #ff0,
+    #0f0,
+    #0ff,
+    #00f,
+    #f0f,
+    #f00
+  );
+  border-radius: 999px;
+  position: relative;
+  cursor: crosshair;
 
-    &-indicator {
-        width: 15px;
-        height: 15px;
-        border: 2px solid #ffffff;
-        border-radius: 50%;
-        transform: translate(-7.5px, -2px);
-        position: absolute;
-    }
-
+  &-indicator {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    transform: translate(-7.5px, -2px);
+    position: absolute;
+  }
 }
