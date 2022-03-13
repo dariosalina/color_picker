@@ -1,6 +1,8 @@
 .cp-container {
   padding: 12px;
   overflow: auto;
+  display: flex;
+  justify-content: space-between;
   scrollbar-width: none;
   -ms-overflow-style: none;
   width: fit-content;
@@ -12,26 +14,43 @@
 .cp-input {
   &-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-end;
     margin: 2px;
   }
 
   &-group {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 8px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+  }
+
+  &-unit {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px;
   }
 
   &-label {
     font-size: 12px;
   }
 
-  &-button-container {
-    button {
-      height: 100%;
+  &-button {
+    width: 100%;
+    padding: 8px;
+    &-container {
+      display: flex;
+      justify-content: center;
+      button {
+        height: 100%;
+        background-color: white;
+        &:hover {
+          background-color: rgb(200, 232, 250);
+        }
+      }
     }
   }
 }
@@ -51,6 +70,7 @@ input {
 label,
 input {
   display: block;
+  padding: 4px;
 }
 
 .cp-rgb-input {
