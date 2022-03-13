@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useState } from "react";
 import Head from 'next/head'
 import { ColorPicker } from '../components/ColorPicker'
 import { Footer } from '../components/Footer'
@@ -19,6 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="main">
+        <h1>Color Picker</h1>
         <ColorPicker
           color={color}
           onChange={handleChange}

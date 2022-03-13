@@ -57,61 +57,61 @@ export const ColorPicker = ({ color, onChange }) => {
         onChange(rgbToHex(rgb));
     };
 
-return (
+  return (
     <div className="cp-container">
         <FreeSelector
-            parsedColor={parsedColor}
-            satCoords={satCoords}
-            hueCoords={hueCoords}
-            onSaturationChange={handleSaturationChange}
-            onHueChange={handleHueChange}
+          parsedColor={parsedColor}
+          satCoords={satCoords}
+          hueCoords={hueCoords}
+          onSaturationChange={handleSaturationChange}
+          onHueChange={handleHueChange}
         />
         <div className="cp-input-container">
             <div className="cp-input-group">
-                <div>
-                    <label className="cp-input-label" htmlFor="cp-input-r">
-                        R
-                    </label>
-                    <input
-                        id="cp-input-r"
-                        className="cp-rgb-input"
-                        placeholder="R"
-                        value={parsedColor.rgb.r}
-                        onChange={(event) => handleRgbChange("r", event.target.value)}
-                        inputMode="numeric"
-                        maxLength="3"
-                    />
-                </div>
-                <div>
-                    <label className="cp-input-label" htmlFor="cp-input-g">
-                        G
-                    </label>
-                    <input
-                        id="cp-input-g"
-                        className="cp-rgb-input"
-                        placeholder="G"
-                        value={parsedColor.rgb.g}
-                        onChange={(event) => handleRgbChange("g", event.target.value)}
-                        inputMode="numeric"
-                        maxLength="3"
-                    />
-                </div>
-                <div>
-                    <label className="cp-input-label" htmlFor="cp-input-b">
-                        B
-                    </label>
-                    <input
-                        id="cp-input-b"
-                        className="cp-rgb-input"
-                        placeholder="B"
-                        value={parsedColor.rgb.b}
-                        onChange={(event) => handleRgbChange("b", event.target.value)}
-                        inputMode="numeric"
-                        maxLength="3"
-                    />
-                </div>
+            <div>
+              <label className="cp-input-label" htmlFor="cp-input-r">
+                R
+              </label>
+              <input
+                id="cp-input-r"
+                className="cp-rgb-input"
+                placeholder="R"
+                value={parsedColor.rgb.r}
+                onChange={(event) => handleRgbChange("r", event.target.value)}
+                inputMode="numeric"
+                maxLength="3"
+              />
+            </div>
+            <div>
+            <label className="cp-input-label" htmlFor="cp-input-g">
+                G
+            </label>
+            <input
+              id="cp-input-g"
+              className="cp-rgb-input"
+              placeholder="G"
+              value={parsedColor.rgb.g}
+              onChange={(event) => handleRgbChange("g", event.target.value)}
+              inputMode="numeric"
+              maxLength="3"
+            />
+            </div>
+              <div>
+                <label className="cp-input-label" htmlFor="cp-input-b">
+                    B
+                </label>
+                <input
+                  id="cp-input-b"
+                  className="cp-rgb-input"
+                  placeholder="B"
+                  value={parsedColor.rgb.b}
+                  onChange={(event) => handleRgbChange("b", event.target.value)}
+                  inputMode="numeric"
+                  maxLength="3"
+                />
+              </div>
             </div>
         </div>
-    </div>
-  )
+      </div>
+    )
 }
